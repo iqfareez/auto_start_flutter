@@ -1,3 +1,8 @@
+# iqfareez's changes
+
+- https://github.com/seena98/auto_start_flutter/pull/7
+- Device Samsung will not trigger autostart
+
 # auto_start_flutter
 
 A flutter plugin for enabling auto-start for background services in 

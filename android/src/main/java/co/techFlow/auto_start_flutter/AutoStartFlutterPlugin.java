@@ -72,8 +72,8 @@ public class AutoStartFlutterPlugin implements FlutterPlugin, MethodCallHandler 
         intent.setComponent(new ComponentName("com.letv.android.letvsafe", "com.letv.android.letvsafe.AutobootManageActivity"));
       } else if ("Honor".equalsIgnoreCase(manufacturer)) {
         intent.setComponent(new ComponentName("com.huawei.systemmanager", "com.huawei.systemmanager.optimize.process.ProtectActivity"));
-      }else if ("samsung".equalsIgnoreCase(manufacturer)) {
-        intent.setComponent(new ComponentName("com.samsung.android.lool", "com.samsung.android.sm.battery.ui.BatteryActivity"));
+      // }else if ("samsung".equalsIgnoreCase(manufacturer)) {
+      //   intent.setComponent(new ComponentName("com.samsung.android.lool", "com.samsung.android.sm.battery.ui.BatteryActivity"));
       }else if ("oneplus".equalsIgnoreCase(manufacturer)) {
         intent.setComponent(new ComponentName("com.oneplus.security", "com.oneplus.security.chainlaunch.view.ChainLaunchAppListActivity"));
       }else if ("nokia".equalsIgnoreCase(manufacturer)) {
