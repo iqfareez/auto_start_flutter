@@ -1,3 +1,23 @@
+# iqfareez's changes
+
+These changes are made so this package is buildable using current latest Flutter version.
+
+- Migrate jcenter() to mavenCentral()
+- compileSdkVersion `29` to `34`
+- Upgrade gradle-5.6.2 to gradle-7.2
+
+To use this package into your Flutter app, add jitpack to `android/build.gradle` file.
+
+```gradle
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' } // <-- Add this
+    }
+}
+```
+
 # auto_start_flutter
 
 A flutter plugin for enabling auto-start for background services in 
@@ -18,11 +38,12 @@ Import the `auto_start_flutter` package.
 import 'package:auto_start_flutter/auto_start_flutter.dart';
 ```
 
-
 To Navigate to auto-start screen and get the permission put this in init-state of your first screen.
+
 ```dart
 getAutoStartPermission();
 ```
+
 To check if auto-start is available in your phone this function returns a bool.
 ```dart
 isAutoStartAvailable
